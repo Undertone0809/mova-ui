@@ -1,0 +1,13 @@
+{
+  "id": "breathe-ring",
+  "file": "breathe-ring.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const BreatheRing = () => (\n  <motion.div\n    className=\"w-10 h-10 rounded-full border-4 border-zinc-800 dark:border-zinc-700\"\n    animate={{ scale: [0.8, 1.1, 0.8], borderWidth: [6, 2, 6] }}\n    transition={{ duration: 3, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { BreatheRing } from './breathe-ring';\n\nexport default function Demo() {\n  return <BreatheRing />;\n}",
+  "exports": [
+    "BreatheRing"
+  ]
+}

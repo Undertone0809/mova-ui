@@ -1,0 +1,13 @@
+{
+  "id": "hourglass",
+  "file": "hourglass.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const Hourglass = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-10 flex flex-col items-center justify-between\"\n      animate={{ rotate: [0, 180, 180, 360, 360] }}\n      transition={{ duration: 3, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"w-8 h-0 border-t-[16px] border-t-zinc-800 dark:border-t-white border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent origin-bottom\" />\n      <div className=\"w-8 h-0 border-b-[16px] border-b-zinc-800 dark:border-b-white border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent origin-top\" />\n    </motion.div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { Hourglass } from './hourglass';\n\nexport default function Demo() {\n  return <Hourglass />;\n}",
+  "exports": [
+    "Hourglass"
+  ]
+}

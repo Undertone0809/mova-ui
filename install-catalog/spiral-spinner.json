@@ -1,0 +1,13 @@
+{
+  "id": "spiral-spinner",
+  "file": "spiral-spinner.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SpiralSpinner = () => {\n  return (\n    <motion.div\n      className=\"w-10 h-10 border-[3px] border-zinc-800 dark:border-zinc-700 rounded-full border-t-transparent\"\n      animate={{ rotate: 360, scale: [1, 0.8, 1] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SpiralSpinner } from './spiral-spinner';\n\nexport default function Demo() {\n  return <SpiralSpinner />;\n}",
+  "exports": [
+    "SpiralSpinner"
+  ]
+}

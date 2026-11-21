@@ -1,0 +1,15 @@
+{
+  "id": "utils",
+  "file": "utils.tsx",
+  "content": "\"use client\";\nimport { clsx, type ClassValue } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n\n// Utility to map a value from one range to another (helpful for mouse following animations)\nexport function mapRange(\n  value: number,\n  inMin: number,\n  inMax: number,\n  outMin: number,\n  outMax: number\n): number {\n  return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;\n}\n",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "css": "",
+  "usage": "import { cn } from './utils';\n\nexport default function Demo() {\n  return <cn />;\n}",
+  "exports": [
+    "cn",
+    "mapRange"
+  ]
+}

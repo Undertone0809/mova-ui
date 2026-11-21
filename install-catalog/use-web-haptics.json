@@ -1,0 +1,11 @@
+{
+  "id": "use-web-haptics",
+  "file": "use-web-haptics.tsx",
+  "content": "\"use client\";\nimport { useCallback } from 'react';\n\nexport type HapticsType = 'light' | 'medium' | 'heavy' | 'success' | 'warning' | 'error';\n\nexport function useWebHaptics() {\n  const trigger = useCallback((type: HapticsType = 'light') => {\n    if (typeof window === 'undefined' || !window.navigator || !window.navigator.vibrate) {\n      return false;\n    }\n\n    try {\n      switch (type) {\n        case 'light':\n          return window.navigator.vibrate(10);\n        case 'medium':\n          return window.navigator.vibrate(25);\n        case 'heavy':\n          return window.navigator.vibrate(50);\n        case 'success':\n          return window.navigator.vibrate([15, 60, 15]);\n        case 'warning':\n          return window.navigator.vibrate([30, 60, 30]);\n        case 'error':\n          return window.navigator.vibrate([60, 60, 60, 60, 60]);\n        default:\n          return window.navigator.vibrate(type as any);\n      }\n    } catch (e) {\n      console.warn('Vibration API error:', e);\n      return false;\n    }\n  }, []);\n\n  return { trigger };\n}\n",
+  "dependencies": [],
+  "css": "",
+  "usage": "import { useWebHaptics } from './use-web-haptics';\n\nexport default function Demo() {\n  return <useWebHaptics />;\n}",
+  "exports": [
+    "useWebHaptics"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "skeleton",
+  "file": "skeleton.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\ninterface SkeletonProps {\n  className?: string;\n  shimmerColor?: 'light' | 'dark';\n}\n\nexport function Skeleton({\n  className = '',\n  shimmerColor = 'dark',\n}: SkeletonProps) {\n  const isDark = shimmerColor === 'dark';\n  \n  const shimmerGradient = isDark\n    ? 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%)'\n    : 'linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.04) 50%, rgba(0,0,0,0) 100%)';\n\n  return (\n    <div\n      className={`relative overflow-hidden rounded-md bg-neutral-200/50 dark:bg-neutral-800/40 ${className}`}\n    >\n      {/* Premium Shimmer Sweep Animation */}\n      <motion.div\n        initial={{ x: '-150%' }}\n        animate={{ x: '150%' }}\n        transition={{\n          repeat: Infinity,\n          duration: 1.6,\n          ease: 'easeInOut',\n        }}\n        style={{\n          background: shimmerGradient,\n        }}\n        className=\"absolute inset-0 w-[80%] h-full\"\n      />\n    </div>\n  );\n}\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { Skeleton } from './skeleton';\n\nexport default function Demo() {\n  return <Skeleton />;\n}",
+  "exports": [
+    "Skeleton"
+  ]
+}

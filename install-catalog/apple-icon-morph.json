@@ -1,0 +1,13 @@
+{
+  "id": "apple-icon-morph",
+  "file": "apple-icon-morph.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const AppleIconMorph = () => (\n  <motion.div\n    className=\"w-8 h-8 bg-zinc-800 dark:bg-white\"\n    animate={{\n      borderRadius: [\"20%\", \"50%\", \"50%\", \"20%\"],\n      rotate: [0, 90, 180, 270]\n    }}\n    transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { AppleIconMorph } from './apple-icon-morph';\n\nexport default function Demo() {\n  return <AppleIconMorph />;\n}",
+  "exports": [
+    "AppleIconMorph"
+  ]
+}

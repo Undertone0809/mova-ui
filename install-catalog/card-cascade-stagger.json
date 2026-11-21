@@ -1,0 +1,13 @@
+{
+  "id": "card-cascade-stagger",
+  "file": "card-cascade-stagger.tsx",
+  "content": "\"use client\";\nimport React, { useState } from 'react';\nimport { motion } from 'framer-motion';\n\ninterface CardCascadeStaggerProps {\n  className?: string;\n  cardClassName?: string;\n}\n\nexport default function CardCascadeStagger({\n  className = '',\n  cardClassName = 'bg-neutral-800'\n}: CardCascadeStaggerProps) {\n  const [isHovered, setIsHovered] = useState(false);\n  const cards = [0, 1, 2, 3, 4];\n  const center = 2;\n\n  return (\n    <div \n      onMouseEnter={() => setIsHovered(true)}\n      onMouseLeave={() => setIsHovered(false)}\n      className={`relative w-[8rem] h-[11rem] cursor-pointer flex items-center justify-center ${className}`}\n    >\n      {cards.map((i) => {\n        const dist = i - center;\n        const targetY = isHovered ? dist * -28 - 14 : dist * 2;\n        const targetX = isHovered ? dist * 14 : 0;\n        const targetRotate = isHovered ? dist * 6 : 0;\n\n        return (\n          <motion.div\n            key={i}\n            animate={{\n              y: targetY,\n              x: targetX,\n              rotate: targetRotate,\n              scale: isHovered ? (dist === 0 ? 1.05 : 0.98) : 1\n            }}\n            transition={{ type: \"spring\", stiffness: 200, damping: 22, mass: 0.9 }}\n            style={{ zIndex: 5 - Math.abs(dist) }}\n            className={`absolute inset-0 rounded-2xl shadow-[0_4px_12px_-2px_rgba(0,0,0,0.15)] border border-white/5 ${cardClassName}`}\n          />\n        );\n      })}\n    </div>\n  );\n}",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import MovaComponent from './card-cascade-stagger';\n\nexport default function Demo() {\n  return <MovaComponent />;\n}",
+  "exports": [
+    "default"
+  ]
+}

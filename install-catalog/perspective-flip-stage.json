@@ -1,0 +1,13 @@
+{
+  "id": "perspective-flip-stage",
+  "file": "perspective-flip-stage.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const PerspectiveCardStage = ({ isVisible }: { isVisible: boolean }) => (\n  <div className=\"fixed inset-0 z-50 pointer-events-none [perspective:1000px] flex items-center justify-center\">\n    <motion.div\n      initial={{ rotateX: 90, scale: 0.85, opacity: 0 }}\n      animate={isVisible ? { rotateX: 0, scale: 1, opacity: 1 } : { rotateX: -90, scale: 0.85, opacity: 0 }}\n      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}\n      className=\"w-full h-full bg-[#181818] border border-white/10 shadow-2xl\"\n    />\n  </div>\n);",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { PerspectiveCardStage } from './perspective-flip-stage';\n\nexport default function Demo() {\n  return <PerspectiveCardStage />;\n}",
+  "exports": [
+    "PerspectiveCardStage"
+  ]
+}

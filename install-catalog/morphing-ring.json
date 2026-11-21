@@ -1,0 +1,13 @@
+{
+  "id": "morphing-ring",
+  "file": "morphing-ring.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const MorphingRing = () => (\n  <motion.div\n    className=\"w-10 h-10 border-[3px] border-zinc-800 dark:border-zinc-700\"\n    animate={{\n      rotate: 180,\n      borderRadius: [\"10%\", \"50%\", \"10%\"]\n    }}\n    transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { MorphingRing } from './morphing-ring';\n\nexport default function Demo() {\n  return <MorphingRing />;\n}",
+  "exports": [
+    "MorphingRing"
+  ]
+}

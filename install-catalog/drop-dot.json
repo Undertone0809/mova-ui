@@ -1,0 +1,13 @@
+{
+  "id": "drop-dot",
+  "file": "drop-dot.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const DropDot = () => (\n  <div className=\"relative w-6 h-12 flex flex-col items-center\">\n    <motion.div\n      className=\"w-2.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full absolute top-0 z-10\"\n      animate={{ y: [0, 24, 0], scaleY: [1, 1.2, 1], scaleX: [1, 0.8, 1] }}\n      transition={{ duration: 1, repeat: Infinity, ease: \"circIn\" }}\n    />\n    <div className=\"w-4 h-1 bg-zinc-300 dark:bg-zinc-700 rounded-full absolute bottom-2 blur-[1px]\" />\n  </div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { DropDot } from './drop-dot';\n\nexport default function Demo() {\n  return <DropDot />;\n}",
+  "exports": [
+    "DropDot"
+  ]
+}

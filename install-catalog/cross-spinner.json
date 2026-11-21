@@ -1,0 +1,13 @@
+{
+  "id": "cross-spinner",
+  "file": "cross-spinner.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const CrossSpinner = () => {\n  return (\n    <motion.div\n      className=\"relative w-8 h-8 flex items-center justify-center\"\n      animate={{ rotate: [0, 90, 180, 270, 360] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"absolute w-full h-1.5 bg-zinc-800 dark:bg-white rounded-full\" />\n      <div className=\"absolute h-full w-1.5 bg-zinc-800 dark:bg-white rounded-full\" />\n    </motion.div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { CrossSpinner } from './cross-spinner';\n\nexport default function Demo() {\n  return <CrossSpinner />;\n}",
+  "exports": [
+    "CrossSpinner"
+  ]
+}

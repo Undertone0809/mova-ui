@@ -1,0 +1,13 @@
+{
+  "id": "fade-dots",
+  "file": "fade-dots.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const FadeDots = () => {\n  return (\n    <div className=\"flex space-x-2\">\n      {[0, 1, 2, 3].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-2.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ opacity: [0, 1, 0] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2, ease: \"linear\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FadeDots } from './fade-dots';\n\nexport default function Demo() {\n  return <FadeDots />;\n}",
+  "exports": [
+    "FadeDots"
+  ]
+}

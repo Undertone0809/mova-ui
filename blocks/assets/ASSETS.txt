@@ -1,0 +1,10 @@
+Mova Blocks asset manifest
+
+Original illustrations and photography generated for this implementation:
+assets/street-corner.webp
+assets/singer-portrait.webp
+assets/moon-headphones.webp
+assets/record-stack.webp
+
+Typography and icons are loaded from npm dependencies.
+The reference-site artwork and JavaScript were not copied into this implementation.

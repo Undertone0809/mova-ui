@@ -1,0 +1,13 @@
+{
+  "id": "haptic-ring",
+  "file": "haptic-ring.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const HapticRing = () => (\n  <motion.div\n    className=\"w-10 h-10 border-[3px] border-zinc-200 dark:border-zinc-800 rounded-full border-t-zinc-800 dark:border-t-white\"\n    animate={{ rotate: [0, 90, 180, 270, 360] }}\n    transition={{ duration: 2, repeat: Infinity, type: \"spring\", bounce: 0.4 }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { HapticRing } from './haptic-ring';\n\nexport default function Demo() {\n  return <HapticRing />;\n}",
+  "exports": [
+    "HapticRing"
+  ]
+}

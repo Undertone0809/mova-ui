@@ -1,0 +1,13 @@
+{
+  "id": "morph-dot-ring",
+  "file": "morph-dot-ring.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const MorphDotRing = () => (\n  <motion.div\n    className=\"grid grid-cols-2 gap-1 w-6 h-6\"\n    animate={{ rotate: 180, gap: [\"4px\", \"0px\", \"4px\"] }}\n    transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n  >\n    {[0,1,2,3].map(i => <div key={i} className=\"w-full h-full bg-zinc-800 dark:bg-white rounded-full\" />)}\n  </motion.div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { MorphDotRing } from './morph-dot-ring';\n\nexport default function Demo() {\n  return <MorphDotRing />;\n}",
+  "exports": [
+    "MorphDotRing"
+  ]
+}

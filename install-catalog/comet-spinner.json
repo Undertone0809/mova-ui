@@ -1,0 +1,13 @@
+{
+  "id": "comet-spinner",
+  "file": "comet-spinner.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const CometSpinner = () => {\n  return (\n    <div className=\"relative w-10 h-10 border border-zinc-200 dark:border-zinc-800 rounded-full flex items-center justify-center\">\n      <motion.div\n        className=\"absolute w-full h-full rounded-full\"\n        style={{\n          background: \"conic-gradient(from 0deg, transparent 0%, rgba(39, 39, 42, 0.1) 60%, rgba(39, 39, 42, 1) 100%)\",\n        }}\n        animate={{ rotate: 360 }}\n        transition={{ duration: 1, repeat: Infinity, ease: \"linear\" }}\n      />\n      <div className=\"absolute bg-white w-8 h-8 rounded-full\" />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { CometSpinner } from './comet-spinner';\n\nexport default function Demo() {\n  return <CometSpinner />;\n}",
+  "exports": [
+    "CometSpinner"
+  ]
+}

@@ -1,0 +1,9 @@
+/* Optional standalone Tailwind v4 input; no website globals or web fonts. */
+@import "tailwindcss" source(none);
+@source "./components";
+@source "./data";
+@custom-variant dark (&:where(.dark, .dark *));
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.glass-panel-dark { background: rgba(20,20,20,.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.04); }
+.glass-panel-light { background: rgba(255,255,255,.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(0,0,0,.04); }

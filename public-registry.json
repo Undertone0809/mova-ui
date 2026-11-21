@@ -1,0 +1,2461 @@
+{
+  "schemaVersion": 1,
+  "sourceRegistry": [
+    "hooks/use-mouse-position.ts",
+    "hooks/use-reduced-motion.ts",
+    "hooks/use-scroll-progress.ts",
+    "hooks/use-stagger.ts",
+    "hooks/use-web-haptics.ts",
+    "lib/presets.ts",
+    "lib/utils.ts",
+    "ui/ai/ai-context-meter.tsx",
+    "ui/ai/ai-sources.tsx",
+    "ui/ai/ai-suggestions.tsx",
+    "ui/ai/ai-task-list.tsx",
+    "ui/ai/ai-tool-call.tsx",
+    "ui/ai/rudder-issue-board.tsx",
+    "ui/animated-sidebar.tsx",
+    "ui/cursor/cursor-trail.tsx",
+    "ui/cursor/mouse-follow.tsx",
+    "ui/cursor/spotlight.tsx",
+    "ui/entrance/blur-fade.tsx",
+    "ui/entrance/fade-down.tsx",
+    "ui/entrance/fade-in.tsx",
+    "ui/entrance/fade-up.tsx",
+    "ui/entrance/scale-in.tsx",
+    "ui/entrance/slide-left.tsx",
+    "ui/entrance/slide-right.tsx",
+    "ui/entrance/zoom-in.tsx",
+    "ui/hover/card-hover.tsx",
+    "ui/hover/glow-button.tsx",
+    "ui/hover/inset-button.tsx",
+    "ui/hover/magnetic-button.tsx",
+    "ui/hover/tilt-card.tsx",
+    "ui/loading/accordion-loader.tsx",
+    "ui/loading/analyzing-image.tsx",
+    "ui/loading/app-icon-load.tsx",
+    "ui/loading/apple-breathe.tsx",
+    "ui/loading/apple-equalizer.tsx",
+    "ui/loading/apple-icon-morph.tsx",
+    "ui/loading/apple-pulse-dots.tsx",
+    "ui/loading/apple-scale-pulse.tsx",
+    "ui/loading/apple-sound-wave.tsx",
+    "ui/loading/apple-text-reveal.tsx",
+    "ui/loading/apple-unlock.tsx",
+    "ui/loading/arc-tracer.tsx",
+    "ui/loading/bar-cascade.tsx",
+    "ui/loading/bar-sweep.tsx",
+    "ui/loading/bobbing-dots.tsx",
+    "ui/loading/border-trail-loading.tsx",
+    "ui/loading/bounce-dots.tsx",
+    "ui/loading/bouncing-bars.tsx",
+    "ui/loading/bouncing-dots.tsx",
+    "ui/loading/bouncing-lines.tsx",
+    "ui/loading/bouncing-square.tsx",
+    "ui/loading/breathe-ring.tsx",
+    "ui/loading/breathing-glow.tsx",
+    "ui/loading/breathing-square.tsx",
+    "ui/loading/circular-bars.tsx",
+    "ui/loading/classic-spinner.tsx",
+    "ui/loading/clock-spinner.tsx",
+    "ui/loading/comet-spinner.tsx",
+    "ui/loading/concentric-pulse.tsx",
+    "ui/loading/concentric-ring.tsx",
+    "ui/loading/concentric-squares.tsx",
+    "ui/loading/conveyor-loop.tsx",
+    "ui/loading/cross-spinner.tsx",
+    "ui/loading/cube-flip-spring.tsx",
+    "ui/loading/dash-ring.tsx",
+    "ui/loading/dashed-spiral.tsx",
+    "ui/loading/diamond-grid.tsx",
+    "ui/loading/diamond-rotate-spring.tsx",
+    "ui/loading/dot-spinner.tsx",
+    "ui/loading/dots-ring.tsx",
+    "ui/loading/double-ring.tsx",
+    "ui/loading/drop-dot.tsx",
+    "ui/loading/dual-arc.tsx",
+    "ui/loading/dynamic-island.tsx",
+    "ui/loading/elastic-bars.tsx",
+    "ui/loading/elastic-square.tsx",
+    "ui/loading/expanding-cross.tsx",
+    "ui/loading/face-id-scan.tsx",
+    "ui/loading/fade-arc.tsx",
+    "ui/loading/fade-dots.tsx",
+    "ui/loading/flip-square.tsx",
+    "ui/loading/floating-diamonds.tsx",
+    "ui/loading/fluid-bars.tsx",
+    "ui/loading/fluid-diamond.tsx",
+    "ui/loading/fluid-dot-orbit.tsx",
+    "ui/loading/fluid-skeleton.tsx",
+    "ui/loading/gears.tsx",
+    "ui/loading/glassmorphic-card.tsx",
+    "ui/loading/gradient-arc.tsx",
+    "ui/loading/grid-dots.tsx",
+    "ui/loading/haptic-ring.tsx",
+    "ui/loading/heartbeat.tsx",
+    "ui/loading/hexagon-spinner.tsx",
+    "ui/loading/hourglass.tsx",
+    "ui/loading/infinity-path.tsx",
+    "ui/loading/intersecting-rings.tsx",
+    "ui/loading/ios-spinner.tsx",
+    "ui/loading/line-spinner.tsx",
+    "ui/loading/liquid-dots.tsx",
+    "ui/loading/mac-terminal.tsx",
+    "ui/loading/magnetic-dots.tsx",
+    "ui/loading/minimal-triangle.tsx",
+    "ui/loading/morph-dot-ring.tsx",
+    "ui/loading/morph-loader.tsx",
+    "ui/loading/morphing-bars.tsx",
+    "ui/loading/morphing-infinity.tsx",
+    "ui/loading/morphing-ring.tsx",
+    "ui/loading/morphing-shape.tsx",
+    "ui/loading/newtons-cradle.tsx",
+    "ui/loading/offset-rings.tsx",
+    "ui/loading/orbiting-circles.tsx",
+    "ui/loading/orbiting-dot.tsx",
+    "ui/loading/origami-shape.tsx",
+    "ui/loading/pendulum.tsx",
+    "ui/loading/pulsating-dots.tsx",
+    "ui/loading/pulse-dot.tsx",
+    "ui/loading/pulse-dots.tsx",
+    "ui/loading/pulse-square.tsx",
+    "ui/loading/pulse.tsx",
+    "ui/loading/pumping-heart.tsx",
+    "ui/loading/radar-sweep.tsx",
+    "ui/loading/ring-sweep.tsx",
+    "ui/loading/ripple-effect.tsx",
+    "ui/loading/rotating-cross.tsx",
+    "ui/loading/rotating-triangle.tsx",
+    "ui/loading/shape-shift-grid.tsx",
+    "ui/loading/shimmer-line.tsx",
+    "ui/loading/siri-wave.tsx",
+    "ui/loading/skeleton-loader.tsx",
+    "ui/loading/skeleton.tsx",
+    "ui/loading/sliding-bars.tsx",
+    "ui/loading/smooth-dot-shift.tsx",
+    "ui/loading/smooth-ring.tsx",
+    "ui/loading/smooth-rounded-square.tsx",
+    "ui/loading/spinning-squares.tsx",
+    "ui/loading/spiral-spinner.tsx",
+    "ui/loading/spring-bars.tsx",
+    "ui/loading/spring-dot-matrix.tsx",
+    "ui/loading/spring-hexagon.tsx",
+    "ui/loading/spring-ring-expand.tsx",
+    "ui/loading/spring-text-pop.tsx",
+    "ui/loading/square-accordion.tsx",
+    "ui/loading/square-grid.tsx",
+    "ui/loading/square-snake.tsx",
+    "ui/loading/square-spinner.tsx",
+    "ui/loading/stacked-bar-pulse.tsx",
+    "ui/loading/swapping-dots.tsx",
+    "ui/loading/swirling-spinner.tsx",
+    "ui/loading/symmetric-wave.tsx",
+    "ui/loading/terminal-loader.tsx",
+    "ui/loading/text-blink.tsx",
+    "ui/loading/text-dots.tsx",
+    "ui/loading/text-morph.tsx",
+    "ui/loading/text-shimmer-wave.tsx",
+    "ui/loading/text-shimmer.tsx",
+    "ui/loading/trailing-dots.tsx",
+    "ui/loading/triple-dot-spinner.tsx",
+    "ui/loading/twin-orbit.tsx",
+    "ui/loading/typing-indicator.tsx",
+    "ui/loading/typing.tsx",
+    "ui/loading/wandering-cube.tsx",
+    "ui/loading/wandering-eyes.tsx",
+    "ui/loading/watch-spinner.tsx",
+    "ui/loading/wave-dots.tsx",
+    "ui/loading/wave-physics-loader.tsx",
+    "ui/loading/waveform-loader.tsx",
+    "ui/loading/zig-zag-pulse.tsx",
+    "ui/patterns/animated-mega-menu.tsx",
+    "ui/patterns/blur-carousel.tsx",
+    "ui/patterns/compare-slider.tsx",
+    "ui/patterns/long-press-context-menu.tsx",
+    "ui/patterns/fold-panel.tsx",
+    "ui/patterns/gesture-range-slider.tsx",
+    "ui/patterns/split-view.tsx",
+    "ui/patterns/animated-tags.tsx",
+    "ui/patterns/expanding-icon-tabs.tsx",
+    "ui/patterns/gooey-popover.tsx",
+    "ui/scroll/progress-indicator.tsx",
+    "ui/scroll/scroll-reveal.tsx",
+    "ui/scroll/sticky-reveal.tsx",
+    "ui/text/blur-text.tsx",
+    "ui/text/character-stagger.tsx",
+    "ui/text/text-reveal.tsx",
+    "ui/text/word-reveal.tsx",
+    "ui/toggles/classic-toggle.json",
+    "ui/transitions/page-transition.tsx",
+    "ui/ai/ai-approval-card.tsx",
+    "ui/ai/ai-prompt-bar.tsx",
+    "ui/ai/ai-sidebar-nav.tsx",
+    "ui/ai/ai-code-block.tsx",
+    "ui/ai/ai-fine-tune-card.tsx",
+    "ui/cards/imessage-chat.tsx",
+    "ui/cards/calendar-day-card.tsx",
+    "ui/cards/balance-bar-chart-card.tsx",
+    "ui/cards/liquid-glass-sheet.tsx",
+    "ui/cards/day-trading-order-ticket.tsx",
+    "ui/cards/voice-assistant-card.tsx",
+    "ui/patterns/infinite-menu.tsx",
+    "ui/patterns/infinite-card-grid.tsx",
+    "ui/patterns/spatial-music-gallery.tsx",
+    "ui/reference/comet-card.tsx",
+    "ui/reference/container-scroll-animation.tsx",
+    "ui/reference/direction-aware-hover.tsx",
+    "ui/reference/draggable-card.tsx",
+    "ui/reference/expandable-card.tsx",
+    "ui/reference/flip-words.tsx",
+    "ui/reference/focus-cards.tsx",
+    "ui/reference/gooey-input.tsx",
+    "ui/reference/link-preview.tsx",
+    "ui/reference/notch.tsx",
+    "ui/reference/pixelated-canvas.tsx",
+    "ui/reference/sticky-scroll-reveal.tsx",
+    "ui/reference/svg-mask-effect.tsx",
+    "ui/reference/text-generate-effect.tsx",
+    "ui/reference/tooltip-card.tsx",
+    "ui/reference/typewriter-effect.tsx",
+    "ui/reference/vanish-input.tsx"
+  ],
+  "sharedStyles": [
+    "ui/ai/ai-design-tokens.css"
+  ],
+  "catalogEntries": [
+    "1.json",
+    "10.json",
+    "11.json",
+    "12.json",
+    "13.json",
+    "14.json",
+    "15.json",
+    "16.json",
+    "17.json",
+    "18.json",
+    "19.json",
+    "2.json",
+    "20.json",
+    "21.json",
+    "22.json",
+    "23.json",
+    "24.json",
+    "25.json",
+    "26.json",
+    "27.json",
+    "28.json",
+    "29.json",
+    "3.json",
+    "30.json",
+    "31.json",
+    "32.json",
+    "33.json",
+    "34.json",
+    "35.json",
+    "36.json",
+    "37.json",
+    "4.json",
+    "5.json",
+    "6.json",
+    "7.json",
+    "8.json",
+    "9.json",
+    "blur-up-char.json",
+    "blur-up-word.json",
+    "bookmark-toggle.json",
+    "bounce-in-char.json",
+    "btn-1.json",
+    "btn-10.json",
+    "btn-11.json",
+    "btn-12.json",
+    "btn-13.json",
+    "btn-14.json",
+    "btn-15.json",
+    "btn-16.json",
+    "btn-17.json",
+    "btn-18.json",
+    "btn-19.json",
+    "btn-2.json",
+    "btn-20.json",
+    "btn-21.json",
+    "btn-22.json",
+    "btn-23.json",
+    "btn-24.json",
+    "btn-25.json",
+    "btn-26.json",
+    "btn-27.json",
+    "btn-28.json",
+    "btn-29.json",
+    "btn-3.json",
+    "btn-30.json",
+    "btn-31.json",
+    "btn-32.json",
+    "btn-33.json",
+    "btn-34.json",
+    "btn-35.json",
+    "btn-36.json",
+    "btn-37.json",
+    "btn-4.json",
+    "btn-5.json",
+    "btn-6.json",
+    "btn-7.json",
+    "btn-8.json",
+    "btn-9.json",
+    "button-slide-arrow.json",
+    "cacheable-bandwidth-cost.json",
+    "card-arc-5.json",
+    "card-arc-7.json",
+    "card-carousel-mono.json",
+    "card-carousel.json",
+    "card-cascade-stagger.json",
+    "card-corner-fan.json",
+    "card-cover-flow-mono.json",
+    "card-cover-flow.json",
+    "card-linear-spread.json",
+    "card-long-arc-5.json",
+    "card-scatter-spread.json",
+    "card-stamp-arc.json",
+    "card-time-machine-mono.json",
+    "card-time-machine.json",
+    "card-wheel-fan.json",
+    "checkbox-draw.json",
+    "checkmark-draw.json",
+    "circle-toggle.json",
+    "circular-create-button.json",
+    "credit-score-barcode-meter.json",
+    "dia-text-reveal.json",
+    "dislike-toggle.json",
+    "dither-book.json",
+    "double-bounce-toggle.json",
+    "drop-in-char.json",
+    "error-shake.json",
+    "fade-in-char.json",
+    "fade-in-text.json",
+    "fade-in-word.json",
+    "file-upload-dropzone.json",
+    "flip-x-char.json",
+    "flip-y-char.json",
+    "float-char.json",
+    "float-word.json",
+    "floating-label-input.json",
+    "focus-blur.json",
+    "form-submit-button.json",
+    "french-doors-3d.json",
+    "glow-text.json",
+    "gradient-shimmer.json",
+    "hover-lift-char.json",
+    "hover-lift-word.json",
+    "hover-scale-char.json",
+    "hover-scale-word.json",
+    "input-focus-glow.json",
+    "inset-action-button.json",
+    "like-toggle.json",
+    "mono-activity-blue.json",
+    "mono-activity-green.json",
+    "mono-activity-purple.json",
+    "mono-heatmap.json",
+    "mono-rounded-area.json",
+    "mono-rounded-bar.json",
+    "mono-rounded-bubble.json",
+    "mono-rounded-bullet.json",
+    "mono-rounded-candlestick.json",
+    "mono-rounded-composed.json",
+    "mono-rounded-donut.json",
+    "mono-rounded-funnel.json",
+    "mono-rounded-gauge-arc.json",
+    "mono-rounded-heatmap.json",
+    "mono-rounded-kpi.json",
+    "mono-rounded-line.json",
+    "mono-rounded-meter.json",
+    "mono-rounded-polar.json",
+    "mono-rounded-pyramid.json",
+    "mono-rounded-radar.json",
+    "mono-rounded-radial-gauge.json",
+    "mono-rounded-radial-group.json",
+    "mono-rounded-range.json",
+    "mono-rounded-sankey.json",
+    "mono-rounded-scatter.json",
+    "mono-rounded-sparkline.json",
+    "mono-rounded-stacked-bar.json",
+    "mono-rounded-step.json",
+    "mono-rounded-stream.json",
+    "mono-rounded-treemap.json",
+    "mono-rounded-waterfall.json",
+    "mono-stock.json",
+    "morph-toggle.json",
+    "multi-select-chips.json",
+    "network-telemetry-matrix.json",
+    "noise-decibel-level.json",
+    "obsidian-liquid-wave.json",
+    "otp-input.json",
+    "overview-bar-scrubber-card.json",
+    "password-toggle.json",
+    "perspective-flip-stage.json",
+    "perspective-flip.json",
+    "pill-tabs.json",
+    "progress-indicator-piano.json",
+    "pulse-char.json",
+    "pulse-word.json",
+    "radial-iris-mask.json",
+    "radio-scale.json",
+    "range-slider.json",
+    "rectangle-toggle.json",
+    "repost-toggle.json",
+    "reveal-text.json",
+    "rise-up-word.json",
+    "rotate-in-char.json",
+    "sales-analytics-dual-bars.json",
+    "sales-overview-radial-dashboard.json",
+    "sales-target-segmented-arc.json",
+    "scale-in-char.json",
+    "scale-in-text.json",
+    "scale-in-word.json",
+    "scramble-text.json",
+    "search-expand.json",
+    "select-dropdown.json",
+    "server-performance-step-bars.json",
+    "shimmer-text.json",
+    "skew-x-char.json",
+    "slide-down-char.json",
+    "slide-down-word.json",
+    "slide-left-char.json",
+    "slide-right-char.json",
+    "slide-up-char.json",
+    "slide-up-text.json",
+    "slide-up-word.json",
+    "solid-switch.json",
+    "spatial-door-portal.json",
+    "spring-text.json",
+    "stagger-text.json",
+    "staggered-glass-curtain.json",
+    "stretch-x-char.json",
+    "stretch-y-char.json",
+    "success-check.json",
+    "swing-word.json",
+    "textarea-auto-grow.json",
+    "theme-toggle.json",
+    "timer-preparation-segmented.json",
+    "tracking-in-text.json",
+    "tracking-out-text.json",
+    "typewriter-text.json",
+    "users-growth-pill-progress.json",
+    "views-hourly-wave-chart.json",
+    "wave-reveal.json",
+    "zoom-in-text.json",
+    "zoom-out-text.json"
+  ],
+  "entryMetadata": {
+    "animated-mega-menu": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "blur-fade": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "blur-carousel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "compare-slider": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "long-press-context-menu": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fold-panel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gesture-range-slider": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "split-view": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "1": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "2": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "3": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "4": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "5": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "6": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "7": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "8": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "9": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "10": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "11": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "12": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "13": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "14": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "15": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "16": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "17": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "18": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "19": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "20": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "21": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "22": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "23": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "24": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "25": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "26": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "27": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "28": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "29": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "30": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "31": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "32": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "33": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "34": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "35": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "36": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "37": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ab-segmented-tabs": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "accordion-blind": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "accordion-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-context-meter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-sources": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-suggestions": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-task-list": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-tool-call": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "analyzing-image": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "animated-sidebar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "animated-tags": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "app-icon-load": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-breathe": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-equalizer": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-icon-morph": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-pulse-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-scale-pulse": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-sound-wave": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-text-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "apple-unlock": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "arc-tracer": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bar-cascade": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bar-sweep": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "blur-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "blur-up-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "blur-up-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bobbing-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bookmark-corner-peel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bookmark-save-pill": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bookmark-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "border-trail-loading": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bounce-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bounce-in-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bouncing-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bouncing-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bouncing-lines": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "bouncing-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "breathe-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "breathing-glow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "breathing-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-1": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-10": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-11": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-12": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-13": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-14": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-15": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-16": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-17": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-18": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-19": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-2": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-20": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-21": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-22": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-23": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-24": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-25": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-26": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-27": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-28": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-29": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-3": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-30": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-31": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-32": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-33": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-34": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-35": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-36": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-37": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-4": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-5": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-6": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-7": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-8": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "btn-9": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "button-slide-arrow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "cacheable-bandwidth-cost": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-arc-5": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-arc-7": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-carousel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-carousel-mono": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-cascade-stagger": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-corner-fan": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-cover-flow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-cover-flow-mono": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-deck-cascade": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-glance-preview": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-hover": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-linear-spread": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-long-arc-5": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-scatter-spread": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-stack-peel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-stamp-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-time-machine": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-time-machine-mono": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "card-wheel-fan": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "category-select": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "character-stagger": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "checkbox-draw": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "checkmark-draw": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "circle-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "circuit-trace-draw": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "circular-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "circular-create-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "classic-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "classic-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "clock-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "comet-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "compass-needle-deflect": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "concentric-pulse": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "concentric-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "concentric-squares": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "context-menu": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "conveyor-loop": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "credit-score-barcode-meter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "cross-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "cube-flip-spring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "cursor-trail": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dash-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dashed-spiral": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "date-position-selector": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dia-text-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "diamond-grid": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "diamond-rotate-spring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dislike-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dither-book": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "domino-cascade": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dot-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dots-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "double-bounce-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "double-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "download-icons": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "drop-dot": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "drop-in-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "droplet-squish": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dual-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dual-magnet-dipole": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "dynamic-island": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "elastic-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "elastic-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "elastic-tag-snap": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "error-shake": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "expanding-cross": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "expanding-icon-tabs": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "face-id-scan": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-down": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-in": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-in-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-in-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-in-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fade-up": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "file-upload-dropzone": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "filter-tag-pill": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "flip-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "flip-x-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "flip-y-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "float-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "float-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "floating-diamonds": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "floating-label-input": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fluid-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fluid-diamond": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fluid-dot-orbit": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "fluid-skeleton": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "focus-blur": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "form-submit-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "french-doors-3d": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gear-tooth-step": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gears": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gelatin-wobble": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "geometric-iris-shutter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "glassmorphic-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "glow-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "glow-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gooey-popover": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gradient-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gradient-shimmer": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "grid-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "haptic-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "heartbeat": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hex-lattice-draw": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hexagon-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hourglass": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hover-lift-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hover-lift-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hover-link-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hover-scale-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "hover-scale-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "inertia-skid-stop": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "infinity-path": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "input-focus-glow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "inset-action-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "inset-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "intersecting-rings": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ios-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "kinetic-metronome-tick": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "kinetic-tension-capsule": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "light-dark-morph": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "like-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "line-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "liquid-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mac-terminal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "magnetic-button": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "magnetic-disks": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "magnetic-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "magnetic-slide-btn": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "matrix-grid-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "minimal-triangle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "modular-tile-snap": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-activity-blue": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-activity-green": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-activity-purple": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-heatmap": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-area": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-bar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-bubble": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-bullet": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-candlestick": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-composed": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-donut": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-funnel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-gauge-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-heatmap": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-kpi": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-line": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-meter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-polar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-pyramid": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-radar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-radial-gauge": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-radial-group": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-range": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-sankey": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-scatter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-sparkline": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-stacked-bar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-step": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-stream": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-treemap": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-rounded-waterfall": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mono-stock": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morph-action-pill": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morph-dot-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morph-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morph-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morphing-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morphing-infinity": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morphing-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "morphing-shape": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "mouse-follow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "multi-select-chips": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "multi-tab-bar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "neon-sign-draw": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "nested-orbital-gimbal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "network-telemetry-matrix": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "newtons-cradle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "noise-decibel-level": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "obsidian-liquid-wave": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "offset-rings": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "orbiting-circles": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "orbiting-dot": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "origami-envelope-unfold": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "origami-shape": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "otp-input": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "overview-bar-scrubber-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "page-transition": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "page-turn-curl": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "password-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pendulum": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pendulum-bubble-level": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "perspective-flip": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "perspective-flip-stage": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "perspective-layout-switcher": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "physics-dock": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pill-tabs": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "plus-minus-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "presets": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "prism-block-stack": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "progress-indicator": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "progress-indicator-piano": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "progress-stepper": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulsating-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse-dot": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pulse-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pumping-heart": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pyramid-block-build": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "radar-sweep": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "radial-iris-mask": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "radial-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "radio-scale": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "range-slider": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "receipt-tape-print": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rectangle-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "repost-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "reveal-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ribbon-banner-slide": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ring-sweep": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ripple-effect": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rise-up-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "roller-blind-drop": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rolling-tumble": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rotate-in-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rotating-cross": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rotating-louvers": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rotating-triangle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "rudder-issue-board": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sales-analytics-dual-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sales-overview-radial-dashboard": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sales-target-segmented-arc": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scale-in": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scale-in-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scale-in-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scale-in-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scramble-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scroll-canvas-unroll": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "scroll-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "search-expand": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "segmented-arc-meter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "segmented-link-stretch": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "segmented-step-bar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "segmented-stepper-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "select-dropdown": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "server-performance-step-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "shape-shift-grid": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "shimmer-line": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "shimmer-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "shutter-slide": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "shutter-step-slices": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "siri-wave": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "skeleton": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "skeleton-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "skew-x-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-down-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-down-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-left": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-left-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-right": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-right-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-up-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-up-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slide-up-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sliding-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "slinky-coil": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "smart-card-dispenser": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "smooth-dot-shift": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "smooth-ring": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "smooth-rounded-square": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "solid-switch": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spatial-door-portal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spinning-squares": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spiral-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "split-gate-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spotlight": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-bars": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-dot-matrix": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-hexagon": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-ring-expand": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spring-text-pop": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "square-accordion": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "square-grid": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "square-snake": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "square-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "squash-sphere": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "stacked-bar-pulse": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "stagger-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "staggered-glass-curtain": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sticky-note-peel": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sticky-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "stretch-x-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "stretch-y-char": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "stroke-waveform": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "submenu-flyout": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "success-check": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sudden-brake": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "swapping-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "swing-word": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "swirling-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "symmetric-wave": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "terminal-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-blink": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-morph": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-shimmer": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-shimmer-wave": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "textarea-auto-grow": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "theme-toggle": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "tilt-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "timer-preparation-segmented": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "tracking-in-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "tracking-out-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "trailing-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "triple-dot-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "twin-orbit": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "typewriter-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "typing": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "typing-indicator": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "use-mouse-position": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "use-reduced-motion": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "use-scroll-progress": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "use-stagger": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "use-web-haptics": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "users-growth-pill-progress": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "utils": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "vertical-wheel-counter": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "views-hourly-wave-chart": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "wandering-cube": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "wandering-eyes": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "watch-spinner": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "wave-dots": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "wave-physics-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "wave-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "waveform-loader": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "word-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "zig-zag-pulse": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "zoom-in": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "zoom-in-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "zoom-out-text": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-approval-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-prompt-bar": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-sidebar-nav": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-code-block": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "ai-fine-tune-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "imessage-chat": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "calendar-day-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "balance-bar-chart-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "liquid-glass-sheet": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "day-trading-order-ticket": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "voice-assistant-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "infinite-menu": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "infinite-card-grid": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "spatial-music-gallery": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "comet-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "container-scroll-animation": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "direction-aware-hover": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "draggable-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "expandable-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "flip-words": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "focus-cards": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "gooey-input": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "link-preview": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "notch": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "pixelated-canvas": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "sticky-scroll-reveal": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "svg-mask-effect": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "text-generate-effect": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "tooltip-card": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "typewriter-effect": {
+      "tier": "free",
+      "previewMode": "client"
+    },
+    "vanish-input": {
+      "tier": "free",
+      "previewMode": "client"
+    }
+  }
+}

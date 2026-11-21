@@ -1,0 +1,13 @@
+{
+  "id": "pulse-dot",
+  "file": "pulse-dot.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const PulseDot = () => {\n  return (\n    <div className=\"relative w-10 h-10 flex items-center justify-center\">\n      <motion.div\n        className=\"absolute w-10 h-10 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ scale: [0, 1], opacity: [0.8, 0] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeOut\" }}\n      />\n      <div className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full relative z-10\" />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { PulseDot } from './pulse-dot';\n\nexport default function Demo() {\n  return <PulseDot />;\n}",
+  "exports": [
+    "PulseDot"
+  ]
+}

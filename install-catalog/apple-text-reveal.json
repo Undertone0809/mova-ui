@@ -1,0 +1,13 @@
+{
+  "id": "apple-text-reveal",
+  "file": "apple-text-reveal.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const AppleTextReveal = () => (\n  <div className=\"font-medium text-lg text-zinc-900 dark:text-white overflow-hidden h-6 relative\">\n    <motion.div\n      animate={{ y: [\"100%\", \"0%\", \"-100%\"] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      Loading\n    </motion.div>\n  </div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { AppleTextReveal } from './apple-text-reveal';\n\nexport default function Demo() {\n  return <AppleTextReveal />;\n}",
+  "exports": [
+    "AppleTextReveal"
+  ]
+}

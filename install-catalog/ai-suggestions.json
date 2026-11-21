@@ -1,0 +1,14 @@
+{
+  "id": "ai-suggestions",
+  "file": "ai-suggestions.tsx",
+  "content": "\"use client\";\n\nimport { AnimatePresence, motion, useReducedMotion } from \"motion/react\";\nimport { useMemo } from \"react\";\n\nconst SPRING_DEFAULT = { bounce: 0.1, duration: 0.25, type: \"spring\" as const };\nconst STAGGER_SECONDS = 0.045;\n\nexport type AISuggestion = { id: string; label: string };\nexport type AISuggestionsProps = {\n  className?: string;\n  label?: string;\n  onSelect?: (suggestion: AISuggestion) => void;\n  suggestions: AISuggestion[];\n};\n\nconst centreOutOrder = (count: number): number[] => {\n  const middle = (count - 1) / 2;\n  return Array.from({ length: count }, (_, index) => Math.abs(index - middle));\n};\n\nexport function AISuggestions({ className = \"\", label, onSelect, suggestions }: AISuggestionsProps) {\n  const shouldReduceMotion = useReducedMotion();\n  const delays = useMemo(() => centreOutOrder(suggestions.length), [suggestions.length]);\n\n  return (\n    <div className={`flex w-full flex-col gap-2 ${className}`}>\n      {label ? <p className=\"text-muted-foreground text-xs uppercase tracking-wide\">{label}</p> : null}\n      <ul className=\"flex list-none flex-wrap gap-2\">\n        <AnimatePresence initial>\n          {suggestions.map((suggestion, index) => (\n            <motion.li\n              animate={{ opacity: 1, scale: 1, y: 0 }}\n              exit={shouldReduceMotion ? { opacity: 0, transition: { duration: 0 } } : { opacity: 0, scale: 0.94 }}\n              initial={shouldReduceMotion ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.94, y: 6 }}\n              key={suggestion.id}\n              layout={!shouldReduceMotion}\n              transition={shouldReduceMotion ? { duration: 0 } : { ...SPRING_DEFAULT, delay: (delays[index] ?? 0) * STAGGER_SECONDS }}\n            >\n              <motion.button\n                className=\"cursor-pointer rounded-full border border-border bg-background px-3 py-1.5 text-left text-foreground text-sm transition-colors hover:border-foreground/30 hover:bg-muted\"\n                onClick={() => onSelect?.(suggestion)}\n                transition={shouldReduceMotion ? { duration: 0 } : SPRING_DEFAULT}\n                type=\"button\"\n                whileTap={shouldReduceMotion ? undefined : { scale: 0.97 }}\n              >\n                {suggestion.label}\n              </motion.button>\n            </motion.li>\n          ))}\n        </AnimatePresence>\n      </ul>\n    </div>\n  );\n}\n\nexport default AISuggestions;\n",
+  "dependencies": [
+    "motion"
+  ],
+  "css": "",
+  "usage": "import MovaComponent from './ai-suggestions';\n\nexport default function Demo() {\n  return <MovaComponent />;\n}",
+  "exports": [
+    "AISuggestions",
+    "default"
+  ]
+}

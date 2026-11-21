@@ -1,0 +1,11 @@
+{
+  "id": "fade-arc",
+  "file": "fade-arc.tsx",
+  "content": "\"use client\";\nimport React from 'react';\n\nexport const FadeArc = () => {\n  return (\n    <div className=\"relative w-9 h-9\">\n      <svg className=\"w-full h-full animate-spin\" viewBox=\"0 0 50 50\">\n        <circle\n          className=\"stroke-zinc-200 dark:stroke-zinc-800\"\n          cx=\"25\"\n          cy=\"25\"\n          r=\"20\"\n          fill=\"none\"\n          strokeWidth=\"3.5\"\n        />\n        <circle\n          className=\"stroke-zinc-800 dark:stroke-white\"\n          cx=\"25\"\n          cy=\"25\"\n          r=\"20\"\n          fill=\"none\"\n          strokeWidth=\"3.5\"\n          strokeDasharray=\"80\"\n          strokeDashoffset=\"28\"\n          strokeLinecap=\"round\"\n        />\n      </svg>\n    </div>\n  );\n};\n",
+  "dependencies": [],
+  "css": "",
+  "usage": "import { FadeArc } from './fade-arc';\n\nexport default function Demo() {\n  return <FadeArc />;\n}",
+  "exports": [
+    "FadeArc"
+  ]
+}

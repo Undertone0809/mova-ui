@@ -1,0 +1,13 @@
+{
+  "id": "square-accordion",
+  "file": "square-accordion.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SquareAccordion = () => {\n  return (\n    <div className=\"flex space-x-1 w-12 h-12 justify-center items-center\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 bg-zinc-800 dark:bg-white rounded-sm\"\n          animate={{ height: [12, 32, 12] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SquareAccordion } from './square-accordion';\n\nexport default function Demo() {\n  return <SquareAccordion />;\n}",
+  "exports": [
+    "SquareAccordion"
+  ]
+}

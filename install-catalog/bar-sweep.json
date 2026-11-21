@@ -1,0 +1,13 @@
+{
+  "id": "bar-sweep",
+  "file": "bar-sweep.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const BarSweep = () => {\n  return (\n    <div className=\"w-12 h-6 border-2 border-zinc-800 dark:border-zinc-700 rounded-full p-1 relative flex items-center overflow-hidden\">\n      <motion.div\n        className=\"w-4 h-4 bg-zinc-800 dark:bg-white rounded-full absolute\"\n        animate={{ x: [0, 24, 0] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { BarSweep } from './bar-sweep';\n\nexport default function Demo() {\n  return <BarSweep />;\n}",
+  "exports": [
+    "BarSweep"
+  ]
+}

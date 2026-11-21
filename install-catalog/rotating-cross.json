@@ -1,0 +1,13 @@
+{
+  "id": "rotating-cross",
+  "file": "rotating-cross.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const RotatingCross = () => {\n  return (\n    <motion.div\n      className=\"relative w-8 h-8 flex items-center justify-center\"\n      animate={{ rotate: 180 }}\n      transition={{ duration: 0.8, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"absolute w-full h-1.5 bg-zinc-800 dark:bg-white rounded-sm\" />\n      <div className=\"absolute h-full w-1.5 bg-zinc-800 dark:bg-white rounded-sm\" />\n    </motion.div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { RotatingCross } from './rotating-cross';\n\nexport default function Demo() {\n  return <RotatingCross />;\n}",
+  "exports": [
+    "RotatingCross"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fade-down",
+  "file": "fade-down.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\ninterface FadeDownProps {\n  children: React.ReactNode;\n  duration?: number;\n  delay?: number;\n  yOffset?: number;\n  className?: string;\n}\n\nexport function FadeDown({\n  children,\n  duration = 0.6,\n  delay = 0,\n  yOffset = -20,\n  className = '',\n}: FadeDownProps) {\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: yOffset }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{\n        duration,\n        delay,\n        ease: [0.16, 1, 0.3, 1], // easeOutExpo\n      }}\n      className={className}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FadeDown } from './fade-down';\n\nexport default function Demo() {\n  return <FadeDown />;\n}",
+  "exports": [
+    "FadeDown"
+  ]
+}

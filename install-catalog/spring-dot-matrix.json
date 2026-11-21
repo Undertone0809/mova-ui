@@ -1,0 +1,13 @@
+{
+  "id": "spring-dot-matrix",
+  "file": "spring-dot-matrix.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SpringDotMatrix = () => {\n  return (\n    <div className=\"grid grid-cols-3 gap-2.5\">\n      {Array.from({ length: 9 }).map((_, i) => (\n        <motion.div\n          key={i}\n          className=\"w-2 h-2 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ scale: [1, 0.4, 1] }}\n          transition={{\n            duration: 1.5,\n            repeat: Infinity,\n            ease: \"easeInOut\",\n            delay: (Math.floor(i / 3) + (i % 3)) * 0.15\n          }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SpringDotMatrix } from './spring-dot-matrix';\n\nexport default function Demo() {\n  return <SpringDotMatrix />;\n}",
+  "exports": [
+    "SpringDotMatrix"
+  ]
+}

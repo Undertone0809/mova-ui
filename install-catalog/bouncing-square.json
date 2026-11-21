@@ -1,0 +1,13 @@
+{
+  "id": "bouncing-square",
+  "file": "bouncing-square.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const BouncingSquare = () => {\n  return (\n    <div className=\"relative w-10 h-12 flex items-end justify-center\">\n      <div className=\"absolute bottom-0 w-8 h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full blur-sm\" />\n      <motion.div\n        className=\"w-6 h-6 bg-zinc-800 dark:bg-white rounded-sm origin-bottom\"\n        animate={{ y: [0, -24, 0], scaleY: [0.8, 1.1, 0.8], scaleX: [1.2, 0.9, 1.2] }}\n        transition={{ duration: 0.6, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { BouncingSquare } from './bouncing-square';\n\nexport default function Demo() {\n  return <BouncingSquare />;\n}",
+  "exports": [
+    "BouncingSquare"
+  ]
+}

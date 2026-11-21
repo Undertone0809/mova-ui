@@ -1,0 +1,13 @@
+{
+  "id": "newtons-cradle",
+  "file": "newtons-cradle.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const NewtonsCradle = () => {\n  return (\n    <div className=\"flex items-center justify-center space-x-0.5\">\n      <motion.div\n        className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full origin-top\"\n        animate={{ rotate: [25, 0, 0, 0, 0, 25] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <div className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full\" />\n      <div className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full\" />\n      <motion.div\n        className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full origin-top\"\n        animate={{ rotate: [0, 0, 0, -25, 0, 0] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { NewtonsCradle } from './newtons-cradle';\n\nexport default function Demo() {\n  return <NewtonsCradle />;\n}",
+  "exports": [
+    "NewtonsCradle"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "french-doors-3d",
+  "file": "french-doors-3d.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const FrenchDoors3D = ({ isVisible }: { isVisible: boolean }) => (\n  <div className=\"fixed inset-0 z-50 pointer-events-none [perspective:1400px] flex overflow-hidden\">\n    <motion.div\n      initial={{ rotateY: 90, opacity: 0 }}\n      animate={isVisible ? { rotateY: 0, opacity: 1 } : { rotateY: 90, opacity: 0 }}\n      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}\n      className=\"w-1/2 h-full bg-[#1c1c1e] origin-right border-r border-white/15 shadow-2xl\"\n    />\n    <motion.div\n      initial={{ rotateY: -90, opacity: 0 }}\n      animate={isVisible ? { rotateY: 0, opacity: 1 } : { rotateY: -90, opacity: 0 }}\n      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}\n      className=\"w-1/2 h-full bg-[#1c1c1e] origin-left border-l border-white/15 shadow-2xl\"\n    />\n  </div>\n);",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FrenchDoors3D } from './french-doors-3d';\n\nexport default function Demo() {\n  return <FrenchDoors3D />;\n}",
+  "exports": [
+    "FrenchDoors3D"
+  ]
+}

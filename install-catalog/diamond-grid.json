@@ -1,0 +1,13 @@
+{
+  "id": "diamond-grid",
+  "file": "diamond-grid.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const DiamondGrid = () => {\n  return (\n    <div className=\"grid grid-cols-2 gap-2 rotate-45\">\n      {[0, 1, 2, 3].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-sm\"\n          animate={{ scale: [1, 0.5, 1], opacity: [1, 0.3, 1] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { DiamondGrid } from './diamond-grid';\n\nexport default function Demo() {\n  return <DiamondGrid />;\n}",
+  "exports": [
+    "DiamondGrid"
+  ]
+}

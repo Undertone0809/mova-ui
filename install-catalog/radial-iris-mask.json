@@ -1,0 +1,13 @@
+{
+  "id": "radial-iris-mask",
+  "file": "radial-iris-mask.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const RadialIrisPortal = ({ isVisible }: { isVisible: boolean }) => (\n  <motion.div \n    className=\"fixed inset-0 z-50 bg-[#121212] pointer-events-none origin-center\"\n    style={{ clipPath: 'circle(150% at 50% 50%)' }}\n    initial={{ clipPath: 'circle(0% at 50% 50%)' }}\n    animate={isVisible ? { clipPath: 'circle(150% at 50% 50%)' } : { clipPath: 'circle(0% at 50% 50%)' }}\n    transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}\n  />\n);",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { RadialIrisPortal } from './radial-iris-mask';\n\nexport default function Demo() {\n  return <RadialIrisPortal />;\n}",
+  "exports": [
+    "RadialIrisPortal"
+  ]
+}

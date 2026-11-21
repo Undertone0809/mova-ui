@@ -1,0 +1,13 @@
+{
+  "id": "square-spinner",
+  "file": "square-spinner.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SquareSpinner = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 border-2 border-zinc-800 dark:border-zinc-700 flex items-center justify-center\"\n      animate={{ rotate: 90 }}\n      transition={{ duration: 0.6, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"w-2 h-2 bg-zinc-800 dark:bg-white\" />\n    </motion.div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SquareSpinner } from './square-spinner';\n\nexport default function Demo() {\n  return <SquareSpinner />;\n}",
+  "exports": [
+    "SquareSpinner"
+  ]
+}

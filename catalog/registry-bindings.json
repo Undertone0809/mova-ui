@@ -1,0 +1,549 @@
+{
+  "physics-dock": {
+    "sourcePath": "components/css-animations/Dock.tsx",
+    "exportName": "Dock",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "card-stack-peel": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "CardStackPeel",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "bookmark-corner-peel": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios1.tsx",
+    "exportName": "BookmarkCornerPeel",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "elastic-tag-snap": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "ElasticTagSnap",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "split-gate-reveal": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "SplitGateReveal",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "shutter-slide": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios1.tsx",
+    "exportName": "ShutterSlide",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "origami-envelope-unfold": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "OrigamiEnvelopeUnfold",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "smart-card-dispenser": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "SmartCardDispenser",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "sticky-note-peel": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios1.tsx",
+    "exportName": "StickyNotePeel",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "receipt-tape-print": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios1.tsx",
+    "exportName": "ReceiptTapePrint",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "circuit-trace-draw": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "CircuitTraceDraw",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "hex-lattice-draw": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "HexagonLatticeDraw",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "stroke-waveform": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios2.tsx",
+    "exportName": "StrokeWaveform",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "prism-block-stack": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "PrismBlockStack",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "modular-tile-snap": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "ModularTileSnap",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "pyramid-block-build": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios2.tsx",
+    "exportName": "PyramidBlockBuild",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "roller-blind-drop": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "RollerBlindDrop",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "scroll-canvas-unroll": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios2.tsx",
+    "exportName": "ScrollCanvasUnroll",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "ribbon-banner-slide": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "RibbonBannerSlide",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "kinetic-tension-capsule": {
+    "sourcePath": "components/css-animations/whimsical/KineticTensionCapsule.tsx",
+    "exportName": "KineticTensionCapsule",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "droplet-squish": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "DropletSquish",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "segmented-link-stretch": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "SegmentedLinkStretch",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "accordion-blind": {
+    "sourcePath": "components/css-animations/whimsical/WhimsicalVariations.tsx",
+    "exportName": "BlindPull",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "rotating-louvers": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "RotatingLouvers",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "geometric-iris-shutter": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "GeometricIrisShutter",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "pendulum-bubble-level": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "PendulumBubbleLevel",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "kinetic-metronome-tick": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "KineticTickingMetronome",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "nested-orbital-gimbal": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "NestedOrbitalGimbal",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "gelatin-wobble": {
+    "sourcePath": "components/css-animations/whimsical/WhimsicalVariations.tsx",
+    "exportName": "GelatinWobble",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "slinky-coil": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "SlinkyCoil",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "squash-sphere": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "SquashStretchSphere",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "domino-cascade": {
+    "sourcePath": "components/css-animations/whimsical/WhimsicalVariations.tsx",
+    "exportName": "DominoChain",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "card-deck-cascade": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "CardDeckCascade",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "gear-tooth-step": {
+    "sourcePath": "components/css-animations/whimsical/ConceptTrios3.tsx",
+    "exportName": "GearToothStep",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "magnetic-disks": {
+    "sourcePath": "components/css-animations/whimsical/WhimsicalVariations.tsx",
+    "exportName": "MagneticDisks",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "dual-magnet-dipole": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "DualMagnetDipole",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "compass-needle-deflect": {
+    "sourcePath": "components/css-animations/whimsical/RedesignedPhysicsTrios.tsx",
+    "exportName": "CompassNeedleDeflect",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "sudden-brake": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "SuddenBrake",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "rolling-tumble": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "RollingTumble",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "inertia-skid-stop": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "InertiaSkidStop",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "neon-sign-draw": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "NeonSignDraw",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "page-turn-curl": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "PageTurnCurl",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "shutter-step-slices": {
+    "sourcePath": "components/css-animations/whimsical/YuiPhysicsExperiments.tsx",
+    "exportName": "ShutterStepBlocks",
+    "props": {
+      "loop": true,
+      "trigger": "hover",
+      "theme": "dark"
+    }
+  },
+  "matrix-grid-loader": {
+    "sourcePath": "components/css-animations/whimsical/MatrixGridLoader.tsx",
+    "exportName": "MatrixGridLoader",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "radial-spinner": {
+    "sourcePath": "components/css-animations/whimsical/AppleLoaders.tsx",
+    "exportName": "AppleRadialSpinner",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "category-select": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "CategorySelect",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "filter-tag-pill": {
+    "sourcePath": "components/css-animations/yui-components/UiKitTrios.tsx",
+    "exportName": "FilterTagPill",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "submenu-flyout": {
+    "sourcePath": "components/css-animations/yui-components/UiKitTrios.tsx",
+    "exportName": "SubmenuFlyout",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "hover-link-card": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "HoverLinkCard",
+    "props": {
+      "theme": "dark",
+      "href": "https://mova-ui.com"
+    }
+  },
+  "magnetic-slide-btn": {
+    "sourcePath": "components/css-animations/yui-components/UiKitTrios.tsx",
+    "exportName": "MagneticIconButton",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "morph-action-pill": {
+    "sourcePath": "components/css-animations/yui-components/UiKitTrios.tsx",
+    "exportName": "MorphActionPill",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "plus-minus-toggle": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "PlusMinusToggle",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "light-dark-morph": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "LightDarkMorphToggle",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "ab-segmented-tabs": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit2.tsx",
+    "exportName": "SegmentedABTabs",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "progress-stepper": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "ProgressStepper",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "segmented-arc-meter": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "SegmentedArcMeter",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "segmented-step-bar": {
+    "sourcePath": "components/css-animations/yui-components/UiKitTrios.tsx",
+    "exportName": "SegmentedStepBar",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "multi-tab-bar": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "MultiTabCloseBar",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "date-position-selector": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit1.tsx",
+    "exportName": "DatePositionSelector",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "segmented-stepper-dots": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "SegmentedStepperDots",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "context-menu": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit2.tsx",
+    "exportName": "ContextMenuEditDelete",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "card-glance-preview": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "CardGlancePreview",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "download-icons": {
+    "sourcePath": "components/css-animations/yui-components/YuiUiKit2.tsx",
+    "exportName": "DownloadAnimatedIcons",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "vertical-wheel-counter": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "VerticalWheelCounter",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "perspective-layout-switcher": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "PerspectiveLayoutSwitcher",
+    "props": {
+      "theme": "dark"
+    }
+  },
+  "bookmark-save-pill": {
+    "sourcePath": "components/css-animations/yui-components/RedesignedUiTrios.tsx",
+    "exportName": "BookmarkSavePill",
+    "props": {
+      "theme": "dark"
+    }
+  }
+}

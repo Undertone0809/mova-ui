@@ -1,0 +1,13 @@
+{
+  "id": "square-snake",
+  "file": "square-snake.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SquareSnake = () => {\n  return (\n    <div className=\"grid grid-cols-3 gap-1 w-10 h-10\">\n      {[\n        [0,0], [1,0], [2,0],\n        [0,1], [1,1], [2,1],\n        [0,2], [1,2], [2,2]\n      ].map(([x,y], i) => (\n        <motion.div\n          key={i}\n          className=\"bg-zinc-800 dark:bg-white rounded-sm w-full h-full\"\n          animate={{ opacity: [0.1, 1, 0.1] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: (x + y) * 0.15, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SquareSnake } from './square-snake';\n\nexport default function Demo() {\n  return <SquareSnake />;\n}",
+  "exports": [
+    "SquareSnake"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "pulse-square",
+  "file": "pulse-square.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const PulseSquare = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 border-4 border-zinc-800 dark:border-zinc-700 rounded-md\"\n      animate={{ scale: [1, 1.2, 1], opacity: [1, 0.3, 1], borderRadius: [\"20%\", \"50%\", \"20%\"] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { PulseSquare } from './pulse-square';\n\nexport default function Demo() {\n  return <PulseSquare />;\n}",
+  "exports": [
+    "PulseSquare"
+  ]
+}

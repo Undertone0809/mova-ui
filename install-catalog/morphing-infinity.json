@@ -1,0 +1,13 @@
+{
+  "id": "morphing-infinity",
+  "file": "morphing-infinity.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const MorphingInfinity = () => {\n  return (\n    <div className=\"w-12 h-6 flex justify-between items-center relative\">\n      <motion.div\n        className=\"w-6 h-6 border-2 border-zinc-800 dark:border-zinc-700 rounded-full\"\n        animate={{ x: [0, 24, 0], scale: [1, 0.5, 1] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <motion.div\n        className=\"w-6 h-6 border-2 border-zinc-800 dark:border-zinc-700 rounded-full absolute top-0 left-0\"\n        animate={{ x: [24, 0, 24], scale: [0.5, 1, 0.5] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { MorphingInfinity } from './morphing-infinity';\n\nexport default function Demo() {\n  return <MorphingInfinity />;\n}",
+  "exports": [
+    "MorphingInfinity"
+  ]
+}

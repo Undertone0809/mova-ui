@@ -1,0 +1,13 @@
+{
+  "id": "pendulum",
+  "file": "pendulum.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const Pendulum = () => {\n  return (\n    <div className=\"relative w-16 h-12 flex items-start justify-center\">\n      <div className=\"w-full h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full rounded-b-none absolute top-0\" />\n      <motion.div\n        className=\"absolute top-0 w-1 bg-zinc-800 dark:bg-white origin-top flex flex-col items-center\"\n        animate={{ rotate: [-45, 45, -45] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n      >\n        <div className=\"w-1 h-8 bg-zinc-800 dark:bg-white\" />\n        <div className=\"w-4 h-4 bg-zinc-800 dark:bg-white rounded-full\" />\n      </motion.div>\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { Pendulum } from './pendulum';\n\nexport default function Demo() {\n  return <Pendulum />;\n}",
+  "exports": [
+    "Pendulum"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "floating-diamonds",
+  "file": "floating-diamonds.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const FloatingDiamonds = () => {\n  return (\n    <div className=\"flex space-x-2\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-sm rotate-45\"\n          animate={{ y: [0, -10, 0] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FloatingDiamonds } from './floating-diamonds';\n\nexport default function Demo() {\n  return <FloatingDiamonds />;\n}",
+  "exports": [
+    "FloatingDiamonds"
+  ]
+}

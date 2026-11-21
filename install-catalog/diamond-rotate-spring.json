@@ -1,0 +1,13 @@
+{
+  "id": "diamond-rotate-spring",
+  "file": "diamond-rotate-spring.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const DiamondRotateSpring = () => (\n  <motion.div\n    className=\"w-8 h-8 bg-zinc-800 dark:bg-white rounded-sm origin-center\"\n    style={{ rotate: 45 }}\n    animate={{ rotate: [45, 135, 225, 315] }}\n    transition={{ duration: 2, repeat: Infinity, type: \"spring\", bounce: 0.4 }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { DiamondRotateSpring } from './diamond-rotate-spring';\n\nexport default function Demo() {\n  return <DiamondRotateSpring />;\n}",
+  "exports": [
+    "DiamondRotateSpring"
+  ]
+}

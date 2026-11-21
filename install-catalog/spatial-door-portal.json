@@ -1,0 +1,13 @@
+{
+  "id": "spatial-door-portal",
+  "file": "spatial-door-portal.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SpatialDoorPortal = ({ isVisible }: { isVisible: boolean }) => (\n  <div className=\"fixed inset-0 z-50 pointer-events-none [perspective:1200px] flex overflow-hidden\">\n    <motion.div\n      initial={{ rotateY: 0 }}\n      animate={isVisible ? { rotateY: -85, x: \"-10%\" } : { rotateY: 0, x: \"0%\" }}\n      transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}\n      className=\"w-1/2 h-full bg-[#181818] origin-left border-r border-white/10 shadow-2xl\"\n    />\n    <motion.div\n      initial={{ rotateY: 0 }}\n      animate={isVisible ? { rotateY: 85, x: \"10%\" } : { rotateY: 0, x: \"0%\" }}\n      transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}\n      className=\"w-1/2 h-full bg-[#181818] origin-right border-l border-white/10 shadow-2xl\"\n    />\n  </div>\n);",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SpatialDoorPortal } from './spatial-door-portal';\n\nexport default function Demo() {\n  return <SpatialDoorPortal />;\n}",
+  "exports": [
+    "SpatialDoorPortal"
+  ]
+}

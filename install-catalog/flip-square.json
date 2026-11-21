@@ -1,0 +1,13 @@
+{
+  "id": "flip-square",
+  "file": "flip-square.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const FlipSquare = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 bg-zinc-800 dark:bg-white rounded-md shadow-sm\"\n      animate={{ rotateX: [0, 180, 180, 0], rotateY: [0, 0, 180, 180] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FlipSquare } from './flip-square';\n\nexport default function Demo() {\n  return <FlipSquare />;\n}",
+  "exports": [
+    "FlipSquare"
+  ]
+}

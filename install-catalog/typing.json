@@ -1,0 +1,13 @@
+{
+  "id": "typing",
+  "file": "typing.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const Typing = () => {\n  return (\n    <div className=\"flex items-center text-zinc-900 dark:text-white font-medium text-lg w-20\">\n      Loading\n      <motion.span\n        className=\"w-1.5 h-4 bg-zinc-900 dark:bg-white ml-1 inline-block\"\n        animate={{ opacity: [1, 0, 1] }}\n        transition={{ duration: 0.8, repeat: Infinity, ease: \"linear\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { Typing } from './typing';\n\nexport default function Demo() {\n  return <Typing />;\n}",
+  "exports": [
+    "Typing"
+  ]
+}

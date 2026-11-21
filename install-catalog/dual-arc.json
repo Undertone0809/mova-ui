@@ -1,0 +1,13 @@
+{
+  "id": "dual-arc",
+  "file": "dual-arc.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const DualArc = () => {\n  return (\n    <div className=\"relative w-8 h-8 flex items-center justify-center\">\n      <motion.div\n        className=\"absolute inset-0 border-2 border-t-zinc-800 dark:border-t-white border-b-zinc-800 dark:border-b-white border-l-transparent border-r-transparent rounded-full\"\n        animate={{ rotate: 360, scale: [1, 0.82, 1] }}\n        transition={{\n          rotate: { duration: 1.2, repeat: Infinity, ease: \"linear\" },\n          scale: { duration: 1.2, repeat: Infinity, ease: \"easeInOut\" }\n        }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { DualArc } from './dual-arc';\n\nexport default function Demo() {\n  return <DualArc />;\n}",
+  "exports": [
+    "DualArc"
+  ]
+}

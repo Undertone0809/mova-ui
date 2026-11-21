@@ -1,0 +1,13 @@
+{
+  "id": "liquid-dots",
+  "file": "liquid-dots.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const LiquidDots = () => {\n  return (\n    <div className=\"relative w-16 h-8 flex items-center justify-center\" style={{ filter: \"url(#goo)\" }}>\n      <svg className=\"absolute w-0 h-0\">\n        <defs>\n          <filter id=\"goo\">\n            <feGaussianBlur in=\"SourceGraphic\" stdDeviation=\"4\" result=\"blur\" />\n            <feColorMatrix in=\"blur\" mode=\"matrix\" values=\"1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7\" result=\"goo\" />\n            <feBlend in=\"SourceGraphic\" in2=\"goo\" />\n          </filter>\n        </defs>\n      </svg>\n      <motion.div\n        className=\"absolute w-6 h-6 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ x: [-16, 16, -16] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <motion.div\n        className=\"absolute w-6 h-6 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ x: [16, -16, 16] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { LiquidDots } from './liquid-dots';\n\nexport default function Demo() {\n  return <LiquidDots />;\n}",
+  "exports": [
+    "LiquidDots"
+  ]
+}

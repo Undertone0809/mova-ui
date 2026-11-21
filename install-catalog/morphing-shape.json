@@ -1,0 +1,13 @@
+{
+  "id": "morphing-shape",
+  "file": "morphing-shape.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const MorphingShape = () => {\n  return (\n    <motion.div\n      className=\"w-10 h-10 bg-zinc-800 dark:bg-white shadow-sm\"\n      animate={{\n        borderRadius: [\"10%\", \"50%\", \"10%\"],\n        rotate: [0, 90, 180],\n        scale: [1, 0.8, 1],\n      }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { MorphingShape } from './morphing-shape';\n\nexport default function Demo() {\n  return <MorphingShape />;\n}",
+  "exports": [
+    "MorphingShape"
+  ]
+}

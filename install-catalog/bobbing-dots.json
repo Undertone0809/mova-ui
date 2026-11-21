@@ -1,0 +1,13 @@
+{
+  "id": "bobbing-dots",
+  "file": "bobbing-dots.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const BobbingDots = () => {\n  return (\n    <div className=\"flex space-x-2\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ y: [0, -10, 0] }}\n          transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.15, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { BobbingDots } from './bobbing-dots';\n\nexport default function Demo() {\n  return <BobbingDots />;\n}",
+  "exports": [
+    "BobbingDots"
+  ]
+}

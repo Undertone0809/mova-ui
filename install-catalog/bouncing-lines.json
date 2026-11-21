@@ -1,0 +1,13 @@
+{
+  "id": "bouncing-lines",
+  "file": "bouncing-lines.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const BouncingLines = () => {\n  return (\n    <div className=\"flex flex-col space-y-1.5 w-8\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-full h-1.5 bg-zinc-800 dark:bg-white rounded-full origin-left\"\n          animate={{ scaleX: [0.3, 1, 0.3] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { BouncingLines } from './bouncing-lines';\n\nexport default function Demo() {\n  return <BouncingLines />;\n}",
+  "exports": [
+    "BouncingLines"
+  ]
+}

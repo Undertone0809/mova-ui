@@ -1,0 +1,28 @@
+{
+  "name": "@mova-ui/source-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "motion": "^12.23.24",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.546.0",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "~5.8.2",
+    "esbuild": "^0.25.0",
+    "tailwindcss": "^4.1.14",
+    "@tailwindcss/cli": "^4.1.14"
+  }
+}

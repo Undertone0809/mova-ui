@@ -1,0 +1,13 @@
+{
+  "id": "staggered-glass-curtain",
+  "file": "staggered-glass-curtain.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nconst COLUMNS = 5;\nconst EASING = [0.83, 0, 0.17, 1];\n\nexport const LayeredGlassCurtain = ({ isVisible }: { isVisible: boolean }) => (\n  <motion.div className=\"fixed inset-0 z-50 flex pointer-events-none overflow-hidden\">\n    {[...Array(COLUMNS)].map((_, i) => (\n      <motion.div\n        key={i}\n        initial={{ y: \"-100%\" }}\n        animate={isVisible ? { y: \"0%\" } : { y: \"-100%\" }}\n        transition={{ duration: 0.65, ease: EASING, delay: i * 0.05 }}\n        className=\"h-full flex-1 bg-[#181818]/95 backdrop-blur-md border-r border-white/5 last:border-r-0\"\n      />\n    ))}\n  </motion.div>\n);",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { LayeredGlassCurtain } from './staggered-glass-curtain';\n\nexport default function Demo() {\n  return <LayeredGlassCurtain />;\n}",
+  "exports": [
+    "LayeredGlassCurtain"
+  ]
+}

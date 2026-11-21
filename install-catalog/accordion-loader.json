@@ -1,0 +1,13 @@
+{
+  "id": "accordion-loader",
+  "file": "accordion-loader.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const AccordionLoader = () => {\n  return (\n    <div className=\"flex flex-col space-y-1.5 w-10 h-10 justify-center\">\n      {[0, 1, 2, 3].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-full h-1 bg-zinc-800 dark:bg-white rounded-full origin-left\"\n          animate={{ scaleX: [1, 0.2, 1] }}\n          transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\", delay: i * 0.15 }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { AccordionLoader } from './accordion-loader';\n\nexport default function Demo() {\n  return <AccordionLoader />;\n}",
+  "exports": [
+    "AccordionLoader"
+  ]
+}

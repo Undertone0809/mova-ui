@@ -1,0 +1,13 @@
+{
+  "id": "sliding-bars",
+  "file": "sliding-bars.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SlidingBars = () => (\n  <div className=\"relative w-8 h-8\">\n    <motion.div\n      className=\"absolute top-0 left-0 w-8 h-1.5 bg-zinc-800 dark:bg-white rounded-full\"\n      animate={{ y: [0, 24, 0] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n    <motion.div\n      className=\"absolute bottom-0 left-0 w-8 h-1.5 bg-zinc-400 dark:bg-zinc-200 rounded-full\"\n      animate={{ y: [0, -24, 0] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  </div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SlidingBars } from './sliding-bars';\n\nexport default function Demo() {\n  return <SlidingBars />;\n}",
+  "exports": [
+    "SlidingBars"
+  ]
+}

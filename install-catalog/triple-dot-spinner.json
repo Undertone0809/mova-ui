@@ -1,0 +1,13 @@
+{
+  "id": "triple-dot-spinner",
+  "file": "triple-dot-spinner.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const TripleDotSpinner = () => {\n  return (\n    <motion.div \n      className=\"relative w-10 h-10\"\n      animate={{ rotate: 360 }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"linear\" }}\n    >\n      {[0, 1, 2].map((i) => (\n        <div\n          key={i}\n          className=\"absolute top-0 left-1/2 w-2 h-2 bg-zinc-800 dark:bg-white rounded-full -ml-1 origin-[4px_20px]\"\n          style={{ transform: `rotate(${i * 120}deg)` }}\n        />\n      ))}\n    </motion.div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { TripleDotSpinner } from './triple-dot-spinner';\n\nexport default function Demo() {\n  return <TripleDotSpinner />;\n}",
+  "exports": [
+    "TripleDotSpinner"
+  ]
+}

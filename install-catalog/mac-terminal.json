@@ -1,0 +1,13 @@
+{
+  "id": "mac-terminal",
+  "file": "mac-terminal.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const MacTerminal = () => (\n  <div className=\"flex items-center text-zinc-900 dark:text-white font-mono text-sm\">\n    <span>~ %</span>\n    <motion.span\n      className=\"ml-1.5 w-2 h-4 bg-zinc-900 dark:bg-white inline-block\"\n      animate={{ opacity: [1, 0, 1] }}\n      transition={{ duration: 1, repeat: Infinity, ease: \"linear\" }}\n    />\n  </div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { MacTerminal } from './mac-terminal';\n\nexport default function Demo() {\n  return <MacTerminal />;\n}",
+  "exports": [
+    "MacTerminal"
+  ]
+}

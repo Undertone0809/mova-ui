@@ -1,0 +1,13 @@
+{
+  "id": "fluid-diamond",
+  "file": "fluid-diamond.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const FluidDiamond = () => (\n  <motion.div\n    className=\"w-6 h-6 bg-zinc-800 dark:bg-white rounded-sm\"\n    style={{ rotate: 45 }}\n    animate={{ scaleX: [1, 1.5, 1], scaleY: [1, 0.5, 1] }}\n    transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { FluidDiamond } from './fluid-diamond';\n\nexport default function Demo() {\n  return <FluidDiamond />;\n}",
+  "exports": [
+    "FluidDiamond"
+  ]
+}

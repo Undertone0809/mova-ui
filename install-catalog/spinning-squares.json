@@ -1,0 +1,13 @@
+{
+  "id": "spinning-squares",
+  "file": "spinning-squares.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const SpinningSquares = () => {\n  return (\n    <div className=\"relative w-10 h-10\">\n      <motion.div\n        className=\"absolute top-0 left-0 w-4 h-4 bg-zinc-800 dark:bg-white rounded-sm\"\n        animate={{ x: [0, 24, 24, 0, 0], y: [0, 0, 24, 24, 0] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <motion.div\n        className=\"absolute bottom-0 right-0 w-4 h-4 bg-zinc-300 dark:bg-zinc-700 rounded-sm\"\n        animate={{ x: [0, -24, -24, 0, 0], y: [0, 0, -24, -24, 0] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { SpinningSquares } from './spinning-squares';\n\nexport default function Demo() {\n  return <SpinningSquares />;\n}",
+  "exports": [
+    "SpinningSquares"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "text-shimmer-wave",
+  "file": "text-shimmer-wave.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const TextShimmerWave = () => {\n  const text = \"Thinking\";\n  return (\n    <div className=\"flex font-medium text-lg\">\n      {text.split(\"\").map((char, i) => (\n        <motion.span\n          key={i}\n          className=\"text-zinc-900 dark:text-white\"\n          animate={{ opacity: [0.3, 1, 0.3], y: [0, -2, 0] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.1, ease: \"easeInOut\" }}\n        >\n          {char}\n        </motion.span>\n      ))}\n    </div>\n  );\n};\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { TextShimmerWave } from './text-shimmer-wave';\n\nexport default function Demo() {\n  return <TextShimmerWave />;\n}",
+  "exports": [
+    "TextShimmerWave"
+  ]
+}

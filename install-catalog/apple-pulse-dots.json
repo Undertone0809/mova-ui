@@ -1,0 +1,13 @@
+{
+  "id": "apple-pulse-dots",
+  "file": "apple-pulse-dots.tsx",
+  "content": "\"use client\";\nimport React from 'react';\nimport { motion } from 'framer-motion';\n\nexport const ApplePulseDots = () => (\n  <div className=\"flex space-x-2\">\n    {[0, 1, 2].map(i => (\n      <motion.div\n        key={i}\n        className=\"w-2.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ scale: [0.5, 1, 0.5], opacity: [0.3, 1, 0.3] }}\n        transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.15, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "css": "",
+  "usage": "import { ApplePulseDots } from './apple-pulse-dots';\n\nexport default function Demo() {\n  return <ApplePulseDots />;\n}",
+  "exports": [
+    "ApplePulseDots"
+  ]
+}
